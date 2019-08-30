@@ -1,2 +1,2 @@
 # augmips
-design a cpu on traditional mips archiecture 
+design a cpu on traditional mips architecture 
