@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 19 09:29:00 2019
+# Process ID: 9968
+# Current directory: F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12420 F:\ÁúÐ¾±­\ucas17_18_20180730\lab\lab6\lab6-2\ucas_CDE_axi_v0.3\mycpu_axi_verify\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1/vivado.log
+# Journal file: F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1/mycpu.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.x}] -log ip_upgrade.log
+upgrade_ip [get_ips  {f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.x}] -log ip_upgrade.log
+upgrade_ip [get_ips  {f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.x}] -log ip_upgrade.log
+report_ip_status
+upgrade_ip
+upgrade_ip [get_ips ]
+update_compile_order -fileset sources_1

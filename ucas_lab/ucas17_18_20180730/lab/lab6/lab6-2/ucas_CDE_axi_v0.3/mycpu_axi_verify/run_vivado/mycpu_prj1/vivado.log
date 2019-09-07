@@ -1,0 +1,106 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 19 09:29:00 2019
+# Process ID: 9968
+# Current directory: F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12420 F:\ÁúÐ¾±­\ucas17_18_20180730\lab\lab6\lab6-2\ucas_CDE_axi_v0.3\mycpu_axi_verify\run_vivado\mycpu_prj1\mycpu.xpr
+# Log file: F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1/vivado.log
+# Journal file: F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1/mycpu.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1'
+INFO: [Project 1-313] Project file moved from 'E:/loongson/arch_ucas/17-18/lab6/ucas_CDE_axi_v0.1/ucas_CDE_axi_v0.3/mycpu_axi_verify/run_vivado/mycpu_prj1' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'axi_crossbar_1x2_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'clk_pll_synth_1' not found
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab3/ucas_CDE_v0.2/mycpu_verify/run_vivado/mycpu_prj1/mycpu.cache/ip', nor could it be found using path 'E:/loongson/arch_ucas/17-18/lab3/ucas_CDE_v0.2/mycpu_verify/run_vivado/mycpu_prj1/mycpu.cache/ip'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab2/mycpu_verify/run_vivado/mycpu/mycpu.ip_user_files', nor could it be found using path 'E:/loongson/arch_ucas/17-18/lab2/mycpu_verify/run_vivado/mycpu/mycpu.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/my_vivado/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'axi_crossbar_1x2' is locked:
+* IP definition 'AXI Crossbar (2.1)' for IP 'axi_crossbar_1x2' (customized with software release 2017.1) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_pll' is locked:
+* IP definition 'Clocking Wizard (5.4)' for IP 'clk_pll' (customized with software release 2017.1) has a newer major version in the IP Catalog.
+* IP definition 'Clocking Wizard (5.4)' for IP 'clk_pll' (customized with software release 2017.1) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+WARNING: [IP_Flow 19-2162] IP 'axi_ram' is locked:
+* IP definition 'Block Memory Generator (8.3)' for IP 'axi_ram' (customized with software release 2017.1) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'mycpu.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:51 . Memory (MB): peak = 1064.797 ; gain = 441.484
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip [get_ips  {f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.x}] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+upgrade_ip [get_ips  {f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.x}] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+upgrade_ip [get_ips  {f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.x f:/¨¢¨²§à¡À-/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.x}] -log ip_upgrade.log
+WARNING: [Coretcl 2-176] No IPs found
+ERROR: [Common 17-69] Command failed: No IP specified.  Please specify IP with 'objects'
+report_ip_status
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 19 09:33:41 2019
+| Host         : DESKTOP-FD5F1F8 running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 3 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++------------------+---------------------------------------------+----------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name    | Status                                      | Recommendation | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                  |                                             |                | Log       |                    | Version |               | License    |                      |
++------------------+---------------------------------------------+----------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| axi_crossbar_1x2 | IP revision change                          | Upgrade IP     |  *(1)     | AXI Crossbar       | 2.1     | 2.1 (Rev. 19) | Included   | xc7a200tfbg676-2     |
+|                  |                                             |                |           |                    | (Rev.   |               |            |                      |
+|                  |                                             |                |           |                    | 13)     |               |            |                      |
++------------------+---------------------------------------------+----------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| axi_ram          | IP minor version change                     | Upgrade IP     |  *(2)     | Block Memory       | 8.3     | 8.4 (Rev. 2)  | Included   | xc7a200tfbg676-2     |
+|                  |                                             |                |           | Generator          | (Rev.   |               |            |                      |
+|                  |                                             |                |           |                    | 6)      |               |            |                      |
++------------------+---------------------------------------------+----------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| clk_pll          | IP major version change. IP revision change | Upgrade IP     | *(3)      | Clocking Wizard    | 5.4     | 6.0 (Rev. 2)  | Included   | xc7a200tfbg676-2     |
++------------------+---------------------------------------------+----------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) d:/vivado/my_vivado/Vivado/2018.3/data/ip/xilinx/axi_crossbar_v2_1/doc/axi_crossbar_v2_1_changelog.txt
+*(2) d:/vivado/my_vivado/Vivado/2018.3/data/ip/xilinx/blk_mem_gen_v8_4/doc/blk_mem_gen_v8_4_changelog.txt
+*(3) d:/vivado/my_vivado/Vivado/2018.3/data/ip/xilinx/clk_wiz_v6_0/doc/clk_wiz_v6_0_changelog.txt
+
+
+upgrade_ip
+ERROR: [Common 17-163] Missing value for option 'objects', please type 'upgrade_ip -help' for usage info.
+upgrade_ip [get_ips ]
+Upgrading 'axi_crossbar_1x2'
+INFO: [Project 1-386] Moving file 'F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci' from fileset 'axi_crossbar_1x2' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded axi_crossbar_1x2 (AXI Crossbar 2.1) from revision 13 to revision 19
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_crossbar_1x2'...
+Upgrading 'axi_ram'
+INFO: [Project 1-386] Moving file 'F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.xci' from fileset 'axi_ram' to fileset 'sources_1'.
+INFO: [IP_Flow 19-1972] Upgraded axi_ram from Block Memory Generator 8.3 to Block Memory Generator 8.4
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_ram'...
+Upgrading 'clk_pll'
+INFO: [Project 1-386] Moving file 'F:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.xci' from fileset 'clk_pll' to fileset 'sources_1'.
+INFO: [IP_Flow 19-1972] Upgraded clk_pll from Clocking Wizard 5.4 to Clocking Wizard 6.0
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_pll'...
+upgrade_ip: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1116.180 ; gain = 9.461
+f:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_crossbar_1x2/axi_crossbar_1x2.xci f:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/axi_ram/axi_ram.xci f:/ÁúÐ¾±­/ucas17_18_20180730/lab/lab6/lab6-2/ucas_CDE_axi_v0.3/mycpu_axi_verify/rtl/xilinx_ip/clk_pll/clk_pll.xci
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 19 09:36:10 2019...
