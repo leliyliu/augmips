@@ -1,0 +1,19 @@
+MIG: 23:52:14 : ################# RUNNING MIG BATCH ###################
+MIG: 23:52:14 : MIG::Writing IN file for 'mig_axi_32'...compDirPath: D:/Vivado2017/Vivado/2017.1/data/ip/xilinx/mig_7series_v4_0... instDirPath: f:/nscscc2017_release/develop/soc_demo_v0.01/soc_up/vivado_xpr/project_1/xilinx_ip/mig_axi_32
+MIG: 23:52:14 : synp_flow:  -- synthesis_mode: Other
+MIG: 23:52:14 : outputDirectory: f:/nscscc2017_release/develop/soc_demo_v0.01/soc_up/vivado_xpr/project_1/xilinx_ip/mig_axi_32/_tmp/
+MIG: 23:52:14 : vivado_mode: xpg_pa
+MIG: 23:52:14 : HDL Language: Verilog
+MIG: 23:52:14 : compInfo: false
+MIG: 23:52:14 : Vivado Options xc7a200t fbg676 -2
+MIG: 23:52:14 : 1: xc7a200t 2: fbg676 3: -2
+MIG: 23:52:14 : relative mig path: coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe
+MIG: 23:52:14 : xilinx_path: D:/Vivado2017/Vivado/2017.1/ids_lite/ISE
+MIG: 23:52:14 : Without MYMIG
+MIG: 23:52:14 : mig_exec path: D:/Vivado2017/Vivado/2017.1/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe
+MIG: 23:52:14 : mig_exec path: D:/Vivado2017/Vivado/2017.1/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe
+MIG: 23:52:14 : mig_bin: D:/Vivado2017/Vivado/2017.1/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe
+MIG: 23:52:14 : D:/Vivado2017/Vivado/2017.1/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe -- f:/nscscc2017_release/develop/soc_demo_v0.01/soc_up/vivado_xpr/project_1/xilinx_ip/mig_axi_32/xil_upgrade.out -- f:/nscscc2017_release/develop/soc_demo_v0.01/soc_up/vivado_xpr/project_1/xilinx_ip/mig_axi_32/xil_upgrade.in
+MIG: 23:52:14 : Running D:/Vivado2017/Vivado/2017.1/ids_lite/ISE/coregen/ip/xilinx/other/com/xilinx/ip/mig_7series_v4_0/bin/nt64/mig.exe -cg_exc_inp f:/nscscc2017_release/develop/soc_demo_v0.01/soc_up/vivado_xpr/project_1/xilinx_ip/mig_axi_32/xil_upgrade.in -cg_exc_out f:/nscscc2017_release/develop/soc_demo_v0.01/soc_up/vivado_xpr/project_1/xilinx_ip/mig_axi_32/xil_upgrade.out ... 
+MIG: 23:52:36 : After isLin
+MIG: 23:52:36 : result: 0

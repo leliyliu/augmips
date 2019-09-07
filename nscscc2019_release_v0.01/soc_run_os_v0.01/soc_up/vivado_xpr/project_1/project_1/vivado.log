@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jul 17 09:44:33 2017
+# Process ID: 4776
+# Current directory: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2236 F:\nscscc2017_release\develop\soc_demo_v0.02\soc_up\vivado_xpr\project_1\project_1\project_1.xpr
+# Log file: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1/vivado.log
+# Journal file: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1/project_1.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1'
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'clk_pll_33_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'clk_wiz_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'axi_interconnect_0_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'mig_axi_32_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'dpram_512x32_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1/project_1.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado2017/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'sram_128x64' is locked:
+* IP definition 'Block Memory Generator (8.2)' for IP 'sram_128x64' (customized with software release 2015.2) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'sram_128x22' is locked:
+* IP definition 'Block Memory Generator (8.2)' for IP 'sram_128x22' (customized with software release 2015.2) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'sram_128x32' is locked:
+* IP definition 'Block Memory Generator (8.2)' for IP 'sram_128x32' (customized with software release 2015.2) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'sram_32x52bit' is locked:
+* IP definition 'Block Memory Generator (8.2)' for IP 'sram_32x52bit' (customized with software release 2015.2) has a newer minor version in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 834.070 ; gain = 84.262
+update_compile_order -fileset sources_1

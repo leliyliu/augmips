@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jul 17 09:44:33 2017
+# Process ID: 4776
+# Current directory: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2236 F:\nscscc2017_release\develop\soc_demo_v0.02\soc_up\vivado_xpr\project_1\project_1\project_1.xpr
+# Log file: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1/vivado.log
+# Journal file: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/project_1/project_1.xpr
+update_compile_order -fileset sources_1

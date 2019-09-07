@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jul 17 09:43:04 2017
+# Process ID: 8892
+# Current directory: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/xilinx_ip/clk_wiz_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3184 F:\nscscc2017_release\develop\soc_demo_v0.02\soc_up\vivado_xpr\project_1\xilinx_ip\clk_wiz_0\clk_wiz_0.dcp
+# Log file: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/xilinx_ip/clk_wiz_0/vivado.log
+# Journal file: F:/nscscc2017_release/develop/soc_demo_v0.02/soc_up/vivado_xpr/project_1/xilinx_ip/clk_wiz_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint {F:\nscscc2017_release\develop\soc_demo_v0.02\soc_up\vivado_xpr\project_1\xilinx_ip\clk_wiz_0\clk_wiz_0.dcp}
