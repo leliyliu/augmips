@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2012.3 (64-bit)
+# Build 209282 by xbuild on Thu Oct 18 20:50:53 MDT 2012
+# Start of session at: Wed Mar 08 14:21:29 2017
+# Process ID: 4228
+# Log file: D:/test/a7/tixijieg/memory/memory_sync/inst_rom/inst_rom.runs/synth_1/inst_rom_display.rds
+# Journal file: D:/test/a7/tixijieg/memory/memory_sync/inst_rom/inst_rom.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source inst_rom_display.tcl

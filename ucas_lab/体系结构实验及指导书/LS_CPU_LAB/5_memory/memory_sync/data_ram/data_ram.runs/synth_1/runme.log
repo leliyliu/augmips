@@ -1,0 +1,427 @@
+
+*** Running vivado
+    with args -log data_ram_display.rds -m64 -mode batch -messageDb vivado.pb -source data_ram_display.tcl
+
+
+****** Vivado v2012.3 (64-bit)
+  **** Build 209282 by xbuild on Thu Oct 18 20:50:53 MDT 2012
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Rodin_SystemBuilder
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source data_ram_display.tcl
+# create_project -in_memory
+# set_property part xc7a200tfbg676-2 [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# read_verilog {
+#   D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram_stub.v
+#   D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module_stub.v
+#   D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/data_ram/data_ram_display.v
+# }
+# read_vhdl {
+#   D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram_stub.vhdl
+#   D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module_stub.vhdl
+# }
+# read_edif D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram.edf
+# read_edif D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module.edf
+# read_xdc D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/constrs_1/imports/data_ram/data_ram.xdc
+# set_property used_in_implementation false [get_files D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/constrs_1/imports/data_ram/data_ram.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.data/wt [current_project]
+# set_property parent.project_dir D:/test/a7/tixijieg/memory/memory_sync/data_ram [current_project]
+# synth_design -top data_ram_display -part xc7a200tfbg676-2
+
+Starting synthesis...
+
+INFO: [Common 17-347] Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+Using Xilinx IP in: C:/Xilinx/14.3/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip
+starting Rtl Elaboration : Time (s): elapsed = 00:00:22 . Memory (MB): peak = 149.910 ; gain = 56.332
+INFO: [Synth 8-638] synthesizing module 'data_ram_display' [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/data_ram/data_ram_display.v:8]
+INFO: [Synth 8-638] synthesizing module 'data_ram' [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_ram' (1#3) [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram_stub.v:6]
+WARNING: [Synth 8-350] instance 'data_ram_module' of module 'data_ram' requires 11 connections, but only 10 given [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/data_ram/data_ram_display.v:50]
+INFO: [Synth 8-638] synthesizing module 'lcd_module' [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'lcd_module' (2#3) [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_ram_display' (3#3) [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/data_ram/data_ram_display.v:8]
+finished Rtl Elaboration : Time (s): elapsed = 00:00:42 . Memory (MB): peak = 422.793 ; gain = 329.215
+Report Check Netlist: 
+-----+-----------------+------+--------+------+-----------------
+     |Item             |Errors|Warnings|Status|Description      
+-----+-----------------+------+--------+------+-----------------
+1    |multi_driven_nets|     0|       0|Passed|Multi driven nets
+-----+-----------------+------+--------+------+-----------------
+Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram.edf]
+Finished Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram.edf]
+Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module.edf]
+Finished Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module.edf]
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/fbg676/Package.xml
+Loading io standards from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+
+Processing XDC Constraints
+Parsing XDC File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/constrs_1/imports/data_ram/data_ram.xdc]
+Finished Parsing XDC File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/constrs_1/imports/data_ram/data_ram.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (OBUFT, IBUF): 2 instances
+
+Phase 0 | Netlist Checksum: b1a6ae0d
+Using Xilinx IP in: C:/Xilinx/14.3/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip
+starting synthesize : Time (s): elapsed = 00:01:05 . Memory (MB): peak = 514.301 ; gain = 420.723
+INFO: [Synth 8-638] synthesizing module 'data_ram_display' [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/data_ram/data_ram_display.v:8]
+INFO: [Synth 8-638] synthesizing module 'data_ram' [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_ram' (1#3) [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram_stub.v:6]
+WARNING: [Synth 8-350] instance 'data_ram_module' of module 'data_ram' requires 11 connections, but only 10 given [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/data_ram/data_ram_display.v:50]
+INFO: [Synth 8-638] synthesizing module 'lcd_module' [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'lcd_module' (2#3) [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'data_ram_display' (3#3) [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/data_ram/data_ram_display.v:8]
+finished synthesize : Time (s): elapsed = 00:01:24 . Memory (MB): peak = 619.293 ; gain = 525.715
+
+---------------------------------------------------------------------------------
+Applying 'set_property' XDC Constraints...
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): elapsed = 00:01:24 . Memory (MB): peak = 619.293 ; gain = 525.715
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB8 0 RAMB16 0 RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): elapsed = 00:01:36 . Memory (MB): peak = 619.293 ; gain = 525.715
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     39 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): elapsed = 00:01:37 . Memory (MB): peak = 619.293 ; gain = 525.715
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_name_reg[37] )
+INFO: [Synth 8-3332] Sequential element (\test_addr_reg[0] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[37] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[35] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[31] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[30] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[29] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[27] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[26] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[25] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[24] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[23] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[22] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[21] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[20] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[19] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[17] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[15] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[14] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[13] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[11] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[10] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[7] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[6] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[5] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[4] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[3] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[2] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[1] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\display_name_reg[0] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\test_addr_reg[1] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\addr_reg[0] ) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (\addr_reg[1] ) is unused and will be removed from module data_ram_display.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): elapsed = 00:01:37 . Memory (MB): peak = 625.586 ; gain = 532.008
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): elapsed = 00:01:37 . Memory (MB): peak = 625.586 ; gain = 532.008
+---------------------------------------------------------------------------------
+
+info: start optimizing sub-critical range ...
+info: done optimizing sub-critical range.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): elapsed = 00:01:38 . Memory (MB): peak = 625.586 ; gain = 532.008
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (display_value_regi_60) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_61) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_62) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_63) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_64) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_65) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_66) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_67) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_68) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_69) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_70) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_71) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_72) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_73) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_74) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_75) is unused and will be removed from module data_ram_display.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_76) is unused and will be removed from module data_ram_display.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+INFO: [Synth 8-3332] Sequential element (display_value_regi_77) is unused and will be removed from module data_ram_display.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): elapsed = 00:01:38 . Memory (MB): peak = 625.586 ; gain = 532.008
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Final Netlist Cleanup
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): elapsed = 00:01:40 . Memory (MB): peak = 625.586 ; gain = 532.008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
+-----+-----------------+------+--------+------+-----------------
+     |Item             |Errors|Warnings|Status|Description      
+-----+-----------------+------+--------+------+-----------------
+1    |multi_driven_nets|     0|       0|Passed|Multi driven nets
+-----+-----------------+------+--------+------+-----------------
+
+---------------------------------------------------------------------------------
+Start renaming generated instances
+---------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------
+Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): elapsed = 00:01:40 . Memory (MB): peak = 625.586 ; gain = 532.008
+---------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
+Writing Synthesis Report
+---------------------------------------------------------------------------------
+Report BlackBoxes: 
+-----+-------------+---------
+     |BlackBox name|Instances
+-----+-------------+---------
+1    |data_ram     |        1
+2    |lcd_module   |        1
+-----+-------------+---------
+Report Cell Usage: 
+-----+----------+-----
+     |Cell      |Count
+-----+----------+-----
+1    |data_ram  |    1
+2    |lcd_module|    1
+3    |BUFG      |    1
+4    |LUT1      |    1
+5    |LUT2      |    4
+6    |LUT3      |   10
+7    |LUT4      |   33
+8    |LUT5      |   30
+9    |LUT6      |   63
+10   |MUXF7     |   30
+11   |FD        |   61
+12   |FDR       |   43
+13   |FDRE      |   32
+14   |IBUF      |    8
+15   |OBUF      |   15
+-----+----------+-----
+Report Instance Areas: 
+-----+--------+------+-----
+     |Instance|Module|Cells
+-----+--------+------+-----
+1    |top     |      |  331
+-----+--------+------+-----
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): elapsed = 00:01:40 . Memory (MB): peak = 625.586 ; gain = 532.008
+---------------------------------------------------------------------------------
+
+Synthesis Optimization Complete: Time (s): elapsed = 00:01:38 . Memory (MB): peak = 625.586 ; gain = 495.668
+Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram.edf]
+Finished Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/memory/memory_sync/data_dcp/data_ram.edf]
+Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module.edf]
+Finished Parsing EDIF File [D:/test/a7/tixijieg/memory/memory_sync/data_ram/data_ram.srcs/sources_1/imports/tixijieg/lcd_module/lcd_module.edf]
+INFO: [Netlist 29-17] Analyzing 108 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/clk_IBUF_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[0]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[10]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[11]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[12]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[13]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[14]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[15]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[16]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[17]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[18]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[19]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[1]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[20]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[21]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[22]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[23]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[24]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[25]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[26]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[27]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[28]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[29]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[2]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[30]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[31]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[32]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[33]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[34]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[35]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[36]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[37]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[38]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[39]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[3]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[4]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[5]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[6]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[7]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[8]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_name_IBUF[9]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_valid_IBUF_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[0]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[10]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[11]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[12]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[13]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[14]_inst 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[15]_inst 
+INFO: [Common 17-14] Message 'Opt 31-32' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. lcd_module/display_value_IBUF[16]_inst 
+WARNING: [Opt 31-35] Removing redundant IBUF, lcd_module/resetn_IBUF_inst, from the path connected to top-level port: resetn 
+WARNING: [Opt 31-36] Removing redundant OBUF, ct_rstn_OBUF_inst, from the path connected to top-level port: ct_rstn 
+WARNING: [Opt 31-36] Removing redundant OBUF, ct_scl_OBUF_inst, from the path connected to top-level port: ct_scl 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[12]_inst 
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_wr_OBUF_inst, from the path connected to top-level port: lcd_wr 
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_rst_OBUF_inst, from the path connected to top-level port: lcd_rst 
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_rs_OBUF_inst, from the path connected to top-level port: lcd_rs 
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_rd_OBUF_inst, from the path connected to top-level port: lcd_rd 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[0]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[1]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[2]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[3]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[4]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/display_number_OBUF[5]_inst 
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_cs_OBUF_inst, from the path connected to top-level port: lcd_cs 
+WARNING: [Opt 31-36] Removing redundant OBUF, lcd_bl_ctr_OBUF_inst, from the path connected to top-level port: lcd_bl_ctr 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[9]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[8]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[7]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[6]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[5]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[4]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[3]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[31]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[30]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[2]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[29]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[28]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[27]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[26]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[25]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[24]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[23]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[22]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[21]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[20]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[1]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[19]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[18]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[17]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[16]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[15]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[14]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[13]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_valid_OBUF_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[0]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[10]_inst 
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. lcd_module/input_value_OBUF[11]_inst 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 106 instances were transformed.
+  FD => FDCE: 61 instances
+  FDR => FDRE: 43 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 2 instances
+
+Phase 0 | Netlist Checksum: 60c2072e
+INFO: [Common 17-83] Releasing license: Synthesis
+synth_design: Time (s): elapsed = 00:01:43 . Memory (MB): peak = 674.547 ; gain = 544.664
+# write_checkpoint data_ram_display.dcp
+# report_utilization -file data_ram_display_utilization_synth.rpt
+report_utilization: Time (s): elapsed = 00:00:00.199 . Memory (MB): peak = 674.547 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 08 10:25:45 2017...

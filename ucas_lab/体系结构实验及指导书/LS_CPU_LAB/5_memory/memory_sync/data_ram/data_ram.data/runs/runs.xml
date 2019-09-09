@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="8">
+	<Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a200tfbg676-2" LaunchPart="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" LaunchTime="1488939837">
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+		<File Type="RDS-DCP" Name="data_ram_display.dcp"/>
+		<File Type="PA-TCL" Name="data_ram_display.tcl"/>
+		<File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+		<File Type="RDS-RDS" Name="data_ram_display.rds"/>
+		<File Type="RDS-UTIL" Name="data_ram_display_utilization_synth.rpt"/>
+	</Run>
+	<Run Id="impl_1" Type="Ft2:EntireDesign" SynthRun="synth_1" Part="xc7a200tfbg676-2" LaunchPart="xc7a200tfbg676-2" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" LaunchTime="1488939947">
+		<File Type="PLACE-UTIL" Name="data_ram_display_utilization_placed.rpt"/>
+		<File Type="PLACE-CTRL" Name="data_ram_display_control_sets_placed.rpt"/>
+		<File Type="ROUTE-DRC" Name="data_ram_display_drc_routed.rpt"/>
+		<File Type="ROUTE-PWR" Name="data_ram_display_power_routed.rpt"/>
+		<File Type="ROUTE-PWR-SUM" Name="data_ram_display_power_summary_routed.rpt"/>
+		<File Type="ROUTE-STATUS" Name="data_ram_display_route_status_routed.rpt"/>
+		<File Type="ROUTE-DCP" Name="data_ram_display_routed.dcp"/>
+		<File Type="ROUTE-TIMINGSUMMARY" Name="data_ram_display_timing_summary_routed.rpt"/>
+		<File Type="OPT-DCP" Name="data_ram_display_opt.dcp"/>
+		<File Type="PA-TCL" Name="data_ram_display.tcl"/>
+		<File Type="PLACE-DCP" Name="data_ram_display_placed.dcp"/>
+		<File Type="PWROPT-DCP" Name="data_ram_display_pwropt.dcp"/>
+		<File Type="POSTPLACE-PWROPT-DCP" Name="data_ram_display_postplace_pwropt.dcp"/>
+		<File Type="PWROPT-DRC" Name="data_ram_display_drc_pwropted.rpt"/>
+		<File Type="PHYSOPT-DCP" Name="data_ram_display_physopt.dcp"/>
+		<File Type="PHYSOPT-DRC" Name="data_ram_display_drc_physopted.rpt"/>
+		<File Type="RDI-RDI" Name="data_ram_display.rdi"/>
+		<File Type="MAP-PCF" Name="data_ram_display.pcf"/>
+		<File Type="PAR-NCD" Name="data_ram_display_routed.ncd"/>
+		<File Type="BG-BIT" Name="data_ram_display.bit"/>
+		<File Type="BG-DRC" Name="data_ram_display.drc"/>
+		<File Type="BG-BGN" Name="data_ram_display.bgn"/>
+		<File Type="BG-BIN" Name="data_ram_display.bin"/>
+		<File Type="BITSTR-MSK" Name="data_ram_display.msk"/>
+		<File Type="BITSTR-RBT" Name="data_ram_display.rbt"/>
+		<File Type="BITSTR-NKY" Name="data_ram_display.nky"/>
+		<File Type="BITSTR-BMM" Name="data_ram_display_bd.bmm"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+		<File Type="OPT-DRC" Name="data_ram_display_drc_opted.rpt"/>
+		<File Type="PLACE-IO" Name="data_ram_display_io_placed.rpt"/>
+		<File Type="PLACE-CLK" Name="data_ram_display_clock_utilization_placed.rpt"/>
+	</Run>
+</Runs>
+

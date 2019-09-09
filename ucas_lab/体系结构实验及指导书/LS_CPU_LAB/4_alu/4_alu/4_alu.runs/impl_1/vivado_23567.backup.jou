@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Feb 16 20:53:27 2017
+# Process ID: 23567
+# Current directory: /home/innovril/vivado1/4_alu/4_alu/4_alu.runs/impl_1
+# Command line: vivado -log alu_display.vdi -applog -messageDb vivado.pb -mode batch -source alu_display.tcl -notrace
+# Log file: /home/innovril/vivado1/4_alu/4_alu/4_alu.runs/impl_1/alu_display.vdi
+# Journal file: /home/innovril/vivado1/4_alu/4_alu/4_alu.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source alu_display.tcl -notrace

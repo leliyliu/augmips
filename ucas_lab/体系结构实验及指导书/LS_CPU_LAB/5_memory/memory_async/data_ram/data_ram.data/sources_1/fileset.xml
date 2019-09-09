@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="26">
+  <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/lcd_module/lcd_module_stub.vhdl">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../lcd_module/lcd_module_stub.vhdl"/>
+        <Attr Name="ImportTime" Val="1486520252"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lcd_module/lcd_module_stub.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../lcd_module/lcd_module_stub.v"/>
+        <Attr Name="ImportTime" Val="1486520252"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/lcd_module/lcd_module.edf">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../lcd_module/lcd_module.edf"/>
+        <Attr Name="ImportTime" Val="1486520252"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/data_ram/data_ram.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../loongson/fpga/a7/CPU_LAB_fpga_a7_20170217/LS_CPU_LAB/5_memory/memory_async/data_ram/data_ram.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/data_ram/data_ram_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../loongson/fpga/a7/CPU_LAB_fpga_a7_20170217/LS_CPU_LAB/5_memory/memory_async/data_ram/data_ram_display.v"/>
+        <Attr Name="ImportTime" Val="1486602986"/>
+        <Attr Name="UsedInSynthesis" Val="1"/>
+        <Attr Name="UsedInImplementation" Val="1"/>
+        <Attr Name="UsedInSimulation" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="data_ram_display"/>
+      <Option Name="TopLib" Val="work"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/data_ram/data_ram_display.v"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+</DARoots>

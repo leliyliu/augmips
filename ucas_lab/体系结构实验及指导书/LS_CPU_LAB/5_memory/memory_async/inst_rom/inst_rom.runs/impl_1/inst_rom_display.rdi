@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# Vivado v2012.3 (64-bit)
+# Build 209282 by xbuild on Thu Oct 18 20:50:53 MDT 2012
+# Start of session at: Tue Mar 07 16:32:51 2017
+# Process ID: 5904
+# Log file: D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/inst_rom_display.rdi
+# Journal file: D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Rodin_SystemBuilder
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source inst_rom_display.tcl -notrace
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/fbg676/Package.xml
+Loading io standards from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing XDC File [D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/.Xil/Vivado-5904-/dcp/inst_rom_display.xdc]
+Finished Parsing XDC File [D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/.Xil/Vivado-5904-/dcp/inst_rom_display.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 67 instances were transformed.
+  FD => FDCE: 37 instances
+  FDR => FDRE: 28 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 2 instances
+
+Phase 0 | Netlist Checksum: f938b7fe
+read_checkpoint: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 482.473 ; gain = 354.273
+Parsing XDC File [D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.srcs/constrs_1/imports/inst_rom/inst_rom.xdc]
+Finished Parsing XDC File [D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.srcs/constrs_1/imports/inst_rom/inst_rom.xdc]
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Logic Optimization | Checksum: 0f2e19fa
+Netlist sorting complete. Time (s): elapsed = 00:00:00.004 . Memory (MB): peak = 537.969 ; gain = 0.000
+
+Phase 1 Retarget
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 73217c23
+
+Time (s): elapsed = 00:00:00.076 . Memory (MB): peak = 537.969 ; gain = 0.648
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-10] Eliminated 24 cells.
+Phase 2 Constant Propagation | Checksum: ac1350a3
+
+Time (s): elapsed = 00:00:00.136 . Memory (MB): peak = 538.219 ; gain = 0.898
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 78 unconnected nets.
+INFO: [Opt 31-11] Eliminated 4 unconnected cells.
+Phase 3 Sweep | Checksum: bb5daf6b
+
+Time (s): elapsed = 00:00:00.179 . Memory (MB): peak = 538.219 ; gain = 0.898
+Ending Logic Optimization Task | Checksum: bb5daf6b
+
+Time (s): elapsed = 00:00:00.179 . Memory (MB): peak = 538.219 ; gain = 0.898
+Netlist sorting complete. Time (s): elapsed = 00:00:00.003 . Memory (MB): peak = 538.219 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-83] Releasing license: Implementation
+opt_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 539.301 ; gain = 55.617
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): elapsed = 00:00:00.104 . Memory (MB): peak = 540.688 ; gain = 0.898
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command place_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+
+Starting Placer Task
+Effort Level for place_design : MEDIUM (Default)
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Mandatory Logic Optimization
+Netlist sorting complete. Time (s): elapsed = 00:00:00.003 . Memory (MB): peak = 554.195 ; gain = 0.012
+Phase 1 Mandatory Logic Optimization | Checksum: 39beef82
+
+Time (s): elapsed = 00:00:00.039 . Memory (MB): peak = 554.195 ; gain = 1.074
+
+Phase 2 Build SLR Info
+Phase 2 Build SLR Info | Checksum: 39beef82
+
+Time (s): elapsed = 00:00:00.070 . Memory (MB): peak = 554.805 ; gain = 1.684
+
+Phase 3 Add Constraints
+Phase 3 Add Constraints | Checksum: 39beef82
+
+Time (s): elapsed = 00:00:00.074 . Memory (MB): peak = 554.805 ; gain = 1.684
+
+Phase 4 Build Shapes
+Phase 4 Build Shapes | Checksum: 1ff14134
+
+Time (s): elapsed = 00:00:00.110 . Memory (MB): peak = 556.000 ; gain = 2.879
+
+Phase 5 Implementation Feasibility check
+Phase 5 Implementation Feasibility check | Checksum: 1ff14134
+
+Time (s): elapsed = 00:00:00.196 . Memory (MB): peak = 556.566 ; gain = 3.445
+
+Phase 6 PrePlace Elements
+Phase 6 PrePlace Elements | Checksum: 1ff14134
+
+Time (s): elapsed = 00:00:00.204 . Memory (MB): peak = 556.566 ; gain = 3.445
+
+Phase 7 Placer Initialization
+
+Phase 7.1 IO & Clk Placer & Init
+
+Phase 7.1.1 IO / Clock Placer
+
+Phase 7.1.2 Build Placer Device
+
+Phase 7.1.2.1 Place Init Device
+Phase 7.1.1 IO / Clock Placer | Checksum: 1ff14134
+
+Time (s): elapsed = 00:00:00.312 . Memory (MB): peak = 560.164 ; gain = 7.043
+Phase 7.1.2.1 Place Init Device | Checksum: 1ff14134
+
+Time (s): elapsed = 00:00:00.803 . Memory (MB): peak = 560.477 ; gain = 7.355
+Phase 7.1.2 Build Placer Device | Checksum: 1ff14134
+
+Time (s): elapsed = 00:00:00.805 . Memory (MB): peak = 560.477 ; gain = 7.355
+Phase 7.1 IO & Clk Placer & Init | Checksum: 1ff14134
+
+Time (s): elapsed = 00:00:00.843 . Memory (MB): peak = 560.516 ; gain = 7.395
+
+Phase 7.2 Build Placer Netlist
+
+Phase 7.2.1 Place Init Design
+Phase 7.2.1 Place Init Design | Checksum: cf4f194c
+
+Time (s): elapsed = 00:00:01 . Memory (MB): peak = 567.719 ; gain = 14.598
+Phase 7.2 Build Placer Netlist | Checksum: cf4f194c
+
+Time (s): elapsed = 00:00:01 . Memory (MB): peak = 567.719 ; gain = 14.598
+
+Phase 7.3 Constrain Clocks
+Phase 7.3 Constrain Clocks | Checksum: cf4f194c
+
+Time (s): elapsed = 00:00:01 . Memory (MB): peak = 567.719 ; gain = 14.598
+Phase 7 Placer Initialization | Checksum: cf4f194c
+
+Time (s): elapsed = 00:00:01 . Memory (MB): peak = 567.719 ; gain = 14.598
+
+Phase 8 Global Placement
+Phase 8 Global Placement | Checksum: dd552156
+
+Time (s): elapsed = 00:00:04 . Memory (MB): peak = 577.707 ; gain = 24.586
+
+Phase 9 Detail Placement
+
+Phase 9.1 Commit Multi Column shapes
+Phase 9.1 Commit Multi Column shapes | Checksum: dd552156
+
+Time (s): elapsed = 00:00:04 . Memory (MB): peak = 577.707 ; gain = 24.586
+
+Phase 9.2 Commit Most Shapes & LUTRAMs
+Phase 9.2 Commit Most Shapes & LUTRAMs | Checksum: c7f52527
+
+Time (s): elapsed = 00:00:04 . Memory (MB): peak = 578.777 ; gain = 25.656
+
+Phase 9.3 Area Swap
+Phase 9.3 Area Swap | Checksum: d65fdf4a
+
+Time (s): elapsed = 00:00:04 . Memory (MB): peak = 578.777 ; gain = 25.656
+
+Phase 9.4 Path Optimizer
+Phase 9.4 Path Optimizer | Checksum: d65fdf4a
+
+Time (s): elapsed = 00:00:04 . Memory (MB): peak = 578.777 ; gain = 25.656
+
+Phase 9.5 Commit Small Shapes
+Phase 9.5 Commit Small Shapes | Checksum: 8b3492ce
+
+Time (s): elapsed = 00:00:05 . Memory (MB): peak = 579.629 ; gain = 26.508
+Phase 9 Detail Placement | Checksum: 8b3492ce
+
+Time (s): elapsed = 00:00:05 . Memory (MB): peak = 579.629 ; gain = 26.508
+
+Phase 10 PostPlace Cleanup
+Phase 10 PostPlace Cleanup | Checksum: 8b3492ce
+
+Time (s): elapsed = 00:00:05 . Memory (MB): peak = 579.629 ; gain = 26.508
+
+Phase 11 Placer Reporting
+Phase 11 Placer Reporting | Checksum: 8b3492ce
+
+Time (s): elapsed = 00:00:05 . Memory (MB): peak = 579.629 ; gain = 26.508
+
+Phase 12 Cleanup
+Phase 12 Cleanup | Checksum: 214afb24
+
+Time (s): elapsed = 00:00:05 . Memory (MB): peak = 579.629 ; gain = 26.508
+Ending Placer Task | Checksum: c7c72695
+
+Time (s): elapsed = 00:00:05 . Memory (MB): peak = 579.629 ; gain = 26.508
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [Timing 38-163] DEBUG : Generate clock report | CPU: 0 secs 
+
+report_utilization: Time (s): elapsed = 00:00:00.014 . Memory (MB): peak = 579.629 ; gain = 0.000
+INFO: [Designutils 20-134] DEBUG : Generate Control Sets report | CPU: 0 secs 
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): elapsed = 00:00:00.176 . Memory (MB): peak = 579.629 ; gain = 0.000
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [Drc 23-27] Running DRC with 2 threads
+
+
+Starting Routing Task
+
+Effort Level for route_design : MEDIUM (Default)
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Starting Route Task
+
+Phase 1 Build RT Design
+
+Phase 1.1 Build Netlist & NodeGraph (MT)
+Netlist sorting complete. Time (s): elapsed = 00:00:00.003 . Memory (MB): peak = 579.629 ; gain = 0.000
+Phase 1.1 Build Netlist & NodeGraph (MT) | Checksum: 0
+
+Time (s): elapsed = 00:01:12 . Memory (MB): peak = 790.523 ; gain = 210.895
+Phase 1 Build RT Design | Checksum: 0
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 790.523 ; gain = 210.895
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+INFO: [Route 35-23] Estimated Global Vertical Wire Utilization = 0.03 %
+INFO: [Route 35-22] Estimated Global Horizontal Wire Utilization = 0.08 %
+
+Phase 2.1 Restore Routing
+INFO: [Route 35-249] Design has 840 routable nets.
+INFO: [Route 35-252] Restored 0 nets from the routeDb.
+INFO: [Route 35-251] Found 0 nets with FIXED_ROUTE property.
+Phase 2.1 Restore Routing | Checksum: 864d0e0e
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 794.992 ; gain = 215.363
+
+Phase 2.2 Special Net Routing
+ Number of Wires with overlaps = 0
+Phase 2.2 Special Net Routing | Checksum: b0dbaf2f
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 810.422 ; gain = 230.793
+
+Phase 2.3 Non Guided Clock Net Routing
+Phase 2.3 Non Guided Clock Net Routing | Checksum: b0dbaf2f
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 810.422 ; gain = 230.793
+Phase 2 Router Initialization | Checksum: b0dbaf2f
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 810.547 ; gain = 230.918
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 64b08730
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 811.832 ; gain = 232.203
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Wires with overlaps = 97
+ Number of Wires with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 7efa8457
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 811.832 ; gain = 232.203
+Phase 4 Rip-up And Reroute | Checksum: 7efa8457
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 811.832 ; gain = 232.203
+
+Phase 5 Post Hold Fix
+Phase 5 Post Hold Fix | Checksum: 7efa8457
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 811.832 ; gain = 232.203
+
+
+  CostCode Usage Stats for the entire design:
+  +----------+----------------------+------------+-----------+-------+
+  | CostCode |         Name         | TotalCount | UsedCount | Usage |
+  +----------+----------------------+------------+-----------+-------+
+  |     0    | GENERIC              |       3113 |         5 |  0.16 |
+  |     1    | DOUBLE               |     712000 |       699 |  0.10 |
+  |     2    | INPUT                |     658130 |       357 |  0.05 |
+  |     3    | BENTQUAD             |     356000 |        99 |  0.03 |
+  |     4    | SLOWSINGLE           |       4648 |         0 |  0.00 |
+  |     5    | CLKPIN               |      46720 |       160 |  0.34 |
+  |     6    | GLOBAL               |     279836 |       146 |  0.05 |
+  |     7    | OUTPUT               |     646881 |      1314 |  0.20 |
+  |     8    | PINFEED              |    1606660 |      4075 |  0.25 |
+  |     9    | BOUNCEIN             |     201250 |       218 |  0.11 |
+  |    10    | LUTINPUT             |     807600 |      3516 |  0.44 |
+  |    11    | IOBOUTPUT            |      10960 |         3 |  0.03 |
+  |    12    | BOUNCEACROSS         |     200250 |       115 |  0.06 |
+  |    13    | VLONG                |      22250 |         0 |  0.00 |
+  |    14    | OUTBOUND             |     639305 |       839 |  0.13 |
+  |    15    | HLONG                |      22250 |         0 |  0.00 |
+  |    16    | PINBOUNCE            |     356000 |       376 |  0.11 |
+  |    17    | BUFGROUT             |         72 |         4 |  5.56 |
+  |    18    | PINFEEDR             |          0 |         0 |  0.00 |
+  |    19    | OPTDELAY             |      12000 |         0 |  0.00 |
+  |    20    | IOBIN2OUT            |       2500 |         3 |  0.12 |
+  |    21    | HQUAD                |     178000 |        72 |  0.04 |
+  |    22    | IOBINPUT             |      14200 |         0 |  0.00 |
+  |    23    | PADINPUT             |       2200 |        28 |  1.27 |
+  |    24    | PADOUTPUT            |       1700 |         4 |  0.24 |
+  |    25    | VLONG12              |      22250 |         0 |  0.00 |
+  |    26    | HVCCGNDOUT           |      45240 |        27 |  0.06 |
+  |    27    | SVLONG               |          0 |         0 |  0.00 |
+  |    28    | VQUAD                |     178000 |        49 |  0.03 |
+  |    29    | SINGLE               |     712000 |      1544 |  0.22 |
+  |    30    | BUFINP2OUT           |        120 |         3 |  2.50 |
+  |    31    | REFCLK               |         10 |         0 |  0.00 |
+  +----------+----------------------+------------+-----------+-------+
+  | ****                TOTAL       |    7742145 |     13656 |  0.18 |
+  +----------+----------------------+------------+-----------+-------+
+  Global Vertical Wire Utilization    = 0.0440733 %
+  Global Horizontal Wire Utilization  = 0.0629874 %
+  Total Num Pips                      = 12791
+  Number of Open Nets                 = 0
+  Number of Pin Open Nets             = 0
+
+Phase 6 Verifying routed nets
+
+ Verification completed successfully
+Phase 6 Verifying routed nets | Checksum: 7efa8457
+
+Time (s): elapsed = 00:01:13 . Memory (MB): peak = 811.832 ; gain = 232.203
+
+Phase 7 Depositing Routes
+Phase 7 Depositing Routes | Checksum: 5b0ae29b
+
+Time (s): elapsed = 00:01:14 . Memory (MB): peak = 811.832 ; gain = 232.203
+INFO: [Route 35-16] Router Completed Successfully
+Ending Route Task | Checksum: 0
+
+Time (s): elapsed = 00:01:14 . Memory (MB): peak = 811.832 ; gain = 232.203
+
+Routing Is Done.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] 'D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Mar 07 16:34:46 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.3/ISE_DS/PlanAhead/doc/webtalk_introduction.html.
+
+Time (s): elapsed = 00:01:24 . Memory (MB): peak = 811.832 ; gain = 232.203
+INFO: [Common 17-83] Releasing license: Implementation
+route_design: Time (s): elapsed = 00:01:24 . Memory (MB): peak = 811.832 ; gain = 232.203
+INFO: [Drc 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/inst_rom_display_drc_routed.rpt.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max, Constraints type: SDC.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): elapsed = 00:00:00.285 . Memory (MB): peak = 811.832 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 07 16:34:51 2017...
+#-----------------------------------------------------------
+# Vivado v2012.3 (64-bit)
+# Build 209282 by xbuild on Thu Oct 18 20:50:53 MDT 2012
+# Start of session at: Tue Mar 07 16:34:56 2017
+# Process ID: 1192
+# Log file: D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/inst_rom_display.rdi
+# Journal file: D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+INFO: [Common 17-81] Feature available: Implementation
+INFO: [Common 17-81] Feature available: Rodin_SystemBuilder
+INFO: [Common 17-81] Feature available: Synthesis
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+source inst_rom_display.tcl -notrace
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.3/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a200t/fbg676/Package.xml
+Loading io standards from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.3/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.3/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing XDC File [D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/.Xil/Vivado-1192-/dcp/inst_rom_display_routed.xdc]
+Finished Parsing XDC File [D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/.Xil/Vivado-1192-/dcp/inst_rom_display_routed.xdc]
+Reading XDEF placement.
+Reading XDEF routing.
+Read XDEF File: Time (s): elapsed = 00:00:00.082 . Memory (MB): peak = 483.164 ; gain = 0.684
+Restoring placement.
+Restored 273 out of 273 XDEF sites from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 67 instances were transformed.
+  FD => FDCE: 37 instances
+  FDR => FDRE: 28 instances
+  IOBUF => IOBUF (OBUFT, IBUF): 2 instances
+
+Phase 0 | Netlist Checksum: 09ad5106
+read_checkpoint: Time (s): elapsed = 00:00:16 . Memory (MB): peak = 483.574 ; gain = 355.387
+INFO: [Common 17-347] Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [Drc 23-27] Running DRC with 2 threads
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./inst_rom_display.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): elapsed = 00:01:04 . Memory (MB): peak = 787.375 ; gain = 303.801
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 07 16:36:18 2017...

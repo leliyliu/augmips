@@ -1,0 +1,9 @@
+#-----------------------------------------------------------
+# Vivado v2012.3 (64-bit)
+# Build 209282 by xbuild on Thu Oct 18 20:50:53 MDT 2012
+# Start of session at: Tue Mar 07 16:32:51 2017
+# Process ID: 5904
+# Log file: D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1/inst_rom_display.rdi
+# Journal file: D:/test/a7/tixijieg/memory/memory_async/inst_rom/inst_rom.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source inst_rom_display.tcl -notrace

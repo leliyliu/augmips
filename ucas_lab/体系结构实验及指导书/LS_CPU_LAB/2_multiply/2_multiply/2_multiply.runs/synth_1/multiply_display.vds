@@ -1,0 +1,393 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Feb 16 20:01:04 2017
+# Process ID: 11271
+# Current directory: /home/innovril/vivado1/2_multiply/2_multiply/2_multiply.runs/synth_1
+# Command line: vivado -log multiply_display.vds -mode batch -messageDb vivado.pb -notrace -source multiply_display.tcl
+# Log file: /home/innovril/vivado1/2_multiply/2_multiply/2_multiply.runs/synth_1/multiply_display.vds
+# Journal file: /home/innovril/vivado1/2_multiply/2_multiply/2_multiply.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source multiply_display.tcl -notrace
+Command: synth_design -top multiply_display -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11434 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1041.586 ; gain = 154.137 ; free physical = 1122 ; free virtual = 4461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'multiply_display' [/home/innovril/vivado1/2_multiply/multiply_display.v:7]
+INFO: [Synth 8-638] synthesizing module 'multiply' [/home/innovril/vivado1/2_multiply/multiply.v:8]
+INFO: [Synth 8-256] done synthesizing module 'multiply' (1#1) [/home/innovril/vivado1/2_multiply/multiply.v:8]
+INFO: [Synth 8-638] synthesizing module 'lcd_module' [/home/innovril/vivado1/2_multiply/2_multiply/2_multiply.runs/synth_1/.Xil/Vivado-11271-Lenovo-IdeaPad-Y480/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'lcd_module' (2#1) [/home/innovril/vivado1/2_multiply/2_multiply/2_multiply.runs/synth_1/.Xil/Vivado-11271-Lenovo-IdeaPad-Y480/realtime/lcd_module_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'multiply_display' (3#1) [/home/innovril/vivado1/2_multiply/multiply_display.v:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1082.023 ; gain = 194.574 ; free physical = 1081 ; free virtual = 4419
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1082.023 ; gain = 194.574 ; free physical = 1080 ; free virtual = 4419
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'lcd_module' instantiated as 'lcd_module' [/home/innovril/vivado1/2_multiply/multiply_display.v:72]
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/innovril/vivado1/2_multiply/multiply.xdc]
+Finished Parsing XDC File [/home/innovril/vivado1/2_multiply/multiply.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/innovril/vivado1/2_multiply/multiply.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/multiply_display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/multiply_display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.477 ; gain = 0.000 ; free physical = 874 ; free virtual = 4213
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 872 ; free virtual = 4211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 872 ; free virtual = 4211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 872 ; free virtual = 4211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "display_valid" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "display_name" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 859 ; free virtual = 4198
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     39 Bit        Muxes := 1     
+	   5 Input     39 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module multiply_display 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     39 Bit        Muxes := 1     
+	   5 Input     39 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module multiply 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 859 ; free virtual = 4198
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 859 ; free virtual = 4198
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 859 ; free virtual = 4198
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'display_name_reg[3]' (FD) to 'display_name_reg[6]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[4]' (FD) to 'display_name_reg[5]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[5]' (FD) to 'display_name_reg[24]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[6]' (FD) to 'display_name_reg[8]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[7]' (FD) to 'display_name_reg[13]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[8]' (FD) to 'display_name_reg[9]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[9]' (FD) to 'display_name_reg[10]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[10]' (FD) to 'display_name_reg[11]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[11]' (FD) to 'display_name_reg[36]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[12]' (FD) to 'display_name_reg[14]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[13]' (FD) to 'display_name_reg[15]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[14]' (FD) to 'display_name_reg[16]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[15]' (FD) to 'display_name_reg[20]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[16]' (FD) to 'display_name_reg[17]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[17]' (FD) to 'display_name_reg[18]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[18]' (FD) to 'display_name_reg[19]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[19]' (FD) to 'display_name_reg[22]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[20]' (FD) to 'display_name_reg[21]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[21]' (FD) to 'display_name_reg[23]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[22]' (FD) to 'display_name_reg[25]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[23]' (FD) to 'display_name_reg[29]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[24]' (FD) to 'display_name_reg[26]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[25]' (FD) to 'display_name_reg[28]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[26]' (FD) to 'display_name_reg[27]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[27]' (FD) to 'display_name_reg[32]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[28]' (FD) to 'display_name_reg[30]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[29]' (FD) to 'display_name_reg[31]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[30]' (FD) to 'display_name_reg[38]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[31]' (FD) to 'display_name_reg[33]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[32]' (FD) to 'display_name_reg[34]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[33]' (FD) to 'display_name_reg[37]'
+INFO: [Synth 8-3886] merging instance 'display_name_reg[34]' (FD) to 'display_name_reg[35]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\display_name_reg[37] )
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[37]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[34]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[33]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[32]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[31]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[30]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[29]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[28]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[27]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[26]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[25]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[24]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[23]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[22]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[21]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[20]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[19]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[18]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[17]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[16]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[15]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[14]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[13]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[12]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[11]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[10]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[9]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[8]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[7]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[6]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[5]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[4]) is unused and will be removed from module multiply_display.
+WARNING: [Synth 8-3332] Sequential element (display_name_reg[3]) is unused and will be removed from module multiply_display.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 846 ; free virtual = 4184
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 846 ; free virtual = 4184
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 801 ; free virtual = 4139
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 800 ; free virtual = 4139
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |lcd_module    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |lcd_module |     1|
+|2     |BUFG       |     1|
+|3     |CARRY4     |    48|
+|4     |LUT1       |   129|
+|5     |LUT2       |     5|
+|6     |LUT3       |   133|
+|7     |LUT4       |     6|
+|8     |LUT5       |    97|
+|9     |LUT6       |    37|
+|10    |FDRE       |   329|
+|11    |IBUF       |     4|
+|12    |OBUF       |     9|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------+---------+------+
+|      |Instance          |Module   |Cells |
++------+------------------+---------+------+
+|1     |top               |         |   845|
+|2     |  multiply_module |multiply |   462|
++------+------------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.477 ; gain = 561.027 ; free physical = 781 ; free virtual = 4120
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1448.477 ; gain = 103.434 ; free physical = 781 ; free virtual = 4119
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1448.484 ; gain = 561.035 ; free physical = 781 ; free virtual = 4119
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1448.484 ; gain = 482.480 ; free physical = 781 ; free virtual = 4120
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1480.492 ; gain = 0.000 ; free physical = 781 ; free virtual = 4120
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 16 20:01:38 2017...
