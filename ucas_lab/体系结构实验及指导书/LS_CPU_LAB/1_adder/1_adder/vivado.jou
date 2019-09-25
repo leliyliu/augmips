@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Sep 22 13:08:58 2019
+# Process ID: 7068
+# Current directory: D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18512 D:\leliy\loognson2020\project\augmips\ucas_lab\体系结构实验及指导书\LS_CPU_LAB\1_adder\1_adder\1_adder.xpr
+# Log file: D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/vivado.log
+# Journal file: D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/testbench.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation

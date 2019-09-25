@@ -1,0 +1,73 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Sep 22 13:08:58 2019
+# Process ID: 7068
+# Current directory: D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18512 D:\leliy\loognson2020\project\augmips\ucas_lab\体系结构实验及指导书\LS_CPU_LAB\1_adder\1_adder\1_adder.xpr
+# Log file: D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/vivado.log
+# Journal file: D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder'
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 22 13:09:22 2019...
+xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/my_vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 775.461 ; gain = 140.691
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/testbench.v
+update_compile_order -fileset sim_1
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 861.563 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/my_vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 5cfc81ebc0a044b780668c52ebb45548 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+系统找不到指定的路径。
+ERROR: [XSIM 43-3238] Failed to link the design.
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 861.563 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 861.563 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Sep 22 13:24:00 2019...

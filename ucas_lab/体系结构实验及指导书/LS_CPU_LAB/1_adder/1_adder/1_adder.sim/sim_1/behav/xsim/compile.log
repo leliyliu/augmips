@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/leliy/loognson2020/project/augmips/ucas_lab/体系结构实验及指导书/LS_CPU_LAB/1_adder/1_adder/1_adder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
