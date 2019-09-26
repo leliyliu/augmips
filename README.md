@@ -1,3 +1,21 @@
+- [augmips](#agumips)
+    - [nscscc2019_release_v0.01](#nscscc2019_release_v0.01)
+        - [FPGA_test_v1.00](#FPGA_test_v1.00)
+            - [FPGA_gpio_test](#FPGA_gpio_test)
+            - [FPGA_soc_test](#FPGA_soc_test)
+        - [Qualifiers_Submission_v0.01](#Qualifiers_Submission_v0.01)
+        - [doc_v0.01](#doc_v0.01)
+        - [func_test_v0.01](#func_test_v0.01)
+        - [perf_test_v0.01](#perf_test_v0.01)
+        - [soc_run_os_v0.01](#soc_run_os_v0.01)
+    - [references](#references)
+        - [computer_architecture](#computer_architecture)
+        - [open_mips](#open_mips)
+        - [verilog](#verilog)
+    - [ucas_lab](#ucas_lab)
+        - [ucas](#ucas)
+        - [体系结构实验及指导书](#体系结构实验及指导书)
+
 # augmips
 design a cpu on traditional mips architecture 
 
